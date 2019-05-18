@@ -245,22 +245,22 @@ Auth.registerAuth = function(app) {
     }
   });
 
-  /**
-   * client_id=GOOGLE_CLIENT_ID
-   * &client_secret=GOOGLE_CLIENT_SECRET
-   * &response_type=token
-   * &grant_type=authorization_code
-   * &code=AUTHORIZATION_CODE
-   *
-   * OR
-   *
-   *
-   * client_id=GOOGLE_CLIENT_ID
-   * &client_secret=GOOGLE_CLIENT_SECRET
-   * &response_type=token
-   * &grant_type=refresh_token
-   * &refresh_token=REFRESH_TOKEN
-   */
+  // /**
+  //  * client_id=GOOGLE_CLIENT_ID
+  //  * &client_secret=GOOGLE_CLIENT_SECRET
+  //  * &response_type=token
+  //  * &grant_type=authorization_code
+  //  * &code=AUTHORIZATION_CODE
+  //  *
+  //  * OR
+  //  *
+  //  *
+  //  * client_id=GOOGLE_CLIENT_ID
+  //  * &client_secret=GOOGLE_CLIENT_SECRET
+  //  * &response_type=token
+  //  * &grant_type=refresh_token
+  //  * &refresh_token=REFRESH_TOKEN
+  //  */
   app.all('/token', function(req, res) {
     console.log('/token query', req.query);
     console.log('/token body', req.body);

@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [{
+        "label": "Start debug",
+        "dependsOn":[
+            "Restart Functions",
+            "Inspect Functions"
+        ]
+    },{
+        "label": "Restart Functions",
+        "command": "functions",
+        "args": ["restart"],
+        "type": "shell"
+    },{
+        "label": "Inspect Functions",
+        "command": "functions",
+        "args": ["inspect","SmartHome"],
+        "type": "shell"
+    },{
+        "label": "both",
+        "command": "functions restart;functions.cmd inspect SmartHome",
+        "type": "shell"
+    }]
+}
