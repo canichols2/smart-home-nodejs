@@ -1,5 +1,9 @@
-<mat-toolbar color="primary">
-  Home Automation is dope
-  
-</mat-toolbar>
-<router-outlet></router-outlet>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav>
+    <ha-side-nav (closeSidenav)="sidenav.close()" ></ha-side-nav>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <ha-main-nav (toggle)="sidenav.toggle()"></ha-main-nav>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

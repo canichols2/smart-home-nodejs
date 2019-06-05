@@ -1,0 +1,47 @@
+@import "~@angular/material/theming";
+// .wrapper {
+    // background-color: beige;
+  h1 {
+    text-align: center;
+  }
+  .welcome {
+    text-align: center;
+    section {
+      padding: 3em;
+      h2 {
+      }
+      p {
+      }
+    }
+    section:nth-child(1) {
+      background-color: rgb(212, 153, 226);
+    }
+    section:nth-child(2) {
+      background-color: rgb(103, 165, 160);
+    }
+    section:nth-child(3) {
+      background-color: rgb(84, 201, 133);
+    }
+    section:nth-child(4) {
+      background-color: rgb(184, 115, 115);
+    }
+  }
+  .elevation1 {
+    @include mat-elevation(1);
+  }
+  .elevation2 {
+    @include mat-elevation(2);
+  }
+  .elevation3 {
+    @include mat-elevation(3);
+  }
+  .elevation4 {
+    @include mat-elevation(4);
+  }
+  .elevation5 {
+    @include mat-elevation(5);
+  }
+  .elevation6 {
+    @include mat-elevation(6);
+  }
+// }

@@ -1,0 +1,15 @@
+
+
+a{
+    text-decoration: none;
+    color: white;
+    &:hover{
+        color : rgb(226, 223, 223);
+    }
+}
+
+.nav-items{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}

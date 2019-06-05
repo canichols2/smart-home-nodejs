@@ -1,0 +1,18 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row [class.mat-elevation-z4]="true">
+        <div fxHide.gt-sm>
+            <button mat-icon-button (click)="onToggleSidenav()">
+                <mat-icon>menu</mat-icon>
+            </button>
+        </div>
+        <a [routerLink]="[ '/' ]">Home Automation</a>
+    </mat-toolbar-row>
+    <mat-toolbar-row fxHide.gt-sm>
+        <ul class="nav-items" fxLayout fxLayoutGap="5px" fxLayoutAlign="space-around center">
+            <li><a mat-button [routerLink]="[ '/devices' ]">My Devices</a></li>
+            <li><a mat-button href="#">How To</a></li>
+            <li><a mat-button href="#">Do Something</a></li>
+            <li><a mat-button href="#">Another Button</a></li>
+        </ul>
+    </mat-toolbar-row>
+</mat-toolbar>
