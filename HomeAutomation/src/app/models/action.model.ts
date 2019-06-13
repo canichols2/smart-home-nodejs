@@ -1,15 +1,27 @@
 export interface Action {
     name?: string;
+    icon?: string;
 }
 
-export interface Power extends Action{
+export class Power implements Action{
+    name?: string;
+    icon?: string;
     power: boolean;
 }
 
-export interface Height extends Action{
+export class Height implements Action{
+    name?: string;
+    icon?: string;
     height: number;
 }
 
-export interface Open extends Action{
+export class Open implements Action{
+    name?: string;
+    icon?: string;
     open: boolean;
+}
+export class Lock implements Action{
+    name?: string;
+    icon?: string;
+    locked: boolean;
 }

@@ -6,11 +6,11 @@ import { Routes, RouterModule } from '@angular/router';
 // import { ControlModule  } from "control/control.module";
 
 const routes: Routes = [
-  {path: '', component: WelcomeComponent},
-  {
+  // {path: '', redirectTo:'home', pathMatch: 'full'},
+  /* {
     path: 'devices',
     loadChildren: './control/control.module#ControlModule'
-  }
+  } */
 ];
 
 @NgModule({

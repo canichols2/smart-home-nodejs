@@ -1,0 +1,12 @@
+@import '~@angular/material/theming';
+.boxes{
+    /* &:nth-child(1n){background: rgb(255, 51, 0);}
+    &:nth-child(2n){background: rgb(76, 76, 172);}
+    &:nth-child(3n){background: rgb(0, 255, 115);}
+    border: 1px solid; */
+    @include mat-elevation-transition;
+    @include mat-elevation(2);
+    &:hover {
+      @include mat-elevation(8);
+    }
+}

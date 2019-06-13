@@ -1,9 +1,27 @@
-<div 
-  gdAreas = "header actions actions | details actions actions | footer actions actions"
-  gdRows = "40% 30% 30%"
-  >
-  <div class="header"  gdArea="header">{{device.name}}</div>
-  <div class="actions"  gdArea="actions">Actions</div>
-  <div class="details"  gdArea="details">Details</div>
-  <div class="footer"  gdArea="footer">Footer</div>
-</div>
+<mat-list >
+    <mat-list-item>
+        Home Computer
+    </mat-list-item>
+</mat-list>
+<mat-nav-list dense>
+  <a mat-list-item><mat-icon>lock</mat-icon>Lock Computer</a>
+  <a mat-list-item><mat-icon>lock</mat-icon>Lock Computer</a>
+  <a mat-list-item><mat-icon>lock</mat-icon>Lock Computer</a>
+  <a mat-list-item><mat-icon>lock</mat-icon>Lock Computer</a>
+  <a mat-list-item><mat-icon>lock</mat-icon>Lock Computer</a>
+  <a mat-list-item><mat-icon>lock</mat-icon>Lock Computer</a>
+  <a mat-list-item><mat-icon>lock</mat-icon>Lock Computer</a>
+    <!-- <div fxLayout="row wrap" fxLayoutAlign="space-between stretch">
+        <div>
+          <div class="header" gdArea="header">{{device.name}}</div>
+          <div class="details" gdArea="details">Details</div>
+          <div class="footer" gdArea="footer">Footer</div>
+        </div>
+        <div class="actionButtons" fxLayout="row" fxLayoutAlign="center center" >
+          <button mat-raised-button><mat-icon>lock</mat-icon>Lock Computer</button>
+          <button mat-icon-button (click)="onClick">
+              <mat-icon class="mat-10">more_vert</mat-icon>
+          </button>
+        </div>
+      </div> -->
+</mat-nav-list>

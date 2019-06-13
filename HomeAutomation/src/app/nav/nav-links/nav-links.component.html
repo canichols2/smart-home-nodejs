@@ -1,0 +1,6 @@
+<mat-nav-list fxHide.gt-sm>
+  <a *ngFor="let link of links" [routerLink]="link.linkArr" mat-list-item (click)="onClose()">{{link.name}}</a>
+</mat-nav-list>
+<ul  fxHide.lt-md class="nav-items" fxLayout fxLayoutGap="5px" fxLayoutAlign="space-around center">
+  <li *ngFor="let link of links" ><a mat-button  [routerLink]="link.linkArr">{{link.name}}</a></li>
+</ul>

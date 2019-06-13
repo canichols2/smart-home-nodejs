@@ -1,4 +1,6 @@
 export enum DeviceType {
     Computer,
-    Macbook
+    Macbook,
+    Window,
+    Car
 }

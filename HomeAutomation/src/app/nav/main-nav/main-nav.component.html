@@ -7,12 +7,7 @@
         </div>
         <a [routerLink]="[ '/' ]">Home Automation</a>
     </mat-toolbar-row>
-    <mat-toolbar-row fxHide.gt-sm>
-        <ul class="nav-items" fxLayout fxLayoutGap="5px" fxLayoutAlign="space-around center">
-            <li><a mat-button [routerLink]="[ '/devices' ]">My Devices</a></li>
-            <li><a mat-button href="#">How To</a></li>
-            <li><a mat-button href="#">Do Something</a></li>
-            <li><a mat-button href="#">Another Button</a></li>
-        </ul>
+    <mat-toolbar-row fxHide.lt-md>
+        <ha-nav-links></ha-nav-links>
     </mat-toolbar-row>
 </mat-toolbar>

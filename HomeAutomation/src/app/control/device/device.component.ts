@@ -7,6 +7,8 @@ import { Device } from 'src/app/models/device.model';
   styleUrls: ['./device.component.scss']
 })
 export class DeviceComponent implements OnInit {
+  elevated:boolean = false
+
   @Input()
   device: Device;
   constructor() { }
